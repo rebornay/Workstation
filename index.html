@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="left-section">
+            <img src="images/workspace.png" class="logo">
+            <div class="content">
+                <h1>Work station <br>just for you</h1>
+                <p>A comfortable workstation keeps bugs far away<br> from your code. Happy coding!!!</p>
+                <button type="button">OUR SERVICES</button>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="slider">
+                <img src="images/pic-1.jpg" id="slide">
+            </div>
+            <div class="slider-content">
+                <h2>Where can i find workstation ideas ?</h2>
+                <hr>
+                <p>Get insipired on how to setup your workstation, 
+                   <br> some like it dark others like it light. Create something that suits you, 
+                    <br>don't give in to peer-pressure.</p>
+            </div>
+
+           <div class="inside">
+                <div class="slider-key">
+                    <img src="images/back.png" id="backbut">
+                    <div class="vertical-line"></div>
+                    <img src="images/next.png" id="nextbut">
+                    
+                </div>
+                <div class="get-started">
+                    <a href="#">Find Ideas</a>
+                </div>
+           </div> 
+        </div>
+    </div>
+
+    <script>
+        var slide = document.getElementById("slide");
+        var backbut = document.getElementById("backbut");
+        var nextbut = document.getElementById("nextbut");
+
+        var slideimages = new Array (
+            "images/pic-1.jpg",
+            "images/pic-2.jpg",
+            "images/pic-3.jpg",
+            "images/pic-4.jpg",
+            "images/pic-5.jpg",
+            "images/pic-6.jpg",
+            
+            );
+
+        let i = 0;
+
+        nextbut.onclick = function(){
+            if (i < 5){
+                slide.src = slideimages[i+1];
+            i++;
+            }
+        }
+
+        backbut.onclick = function(){
+            if (i > 0){
+                slide.src = slideimages[i-1];
+            i--;
+            }
+        }
+    </script>
+</body>
+</html>
