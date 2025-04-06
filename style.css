@@ -190,7 +190,7 @@ hr {
 
     .slider-content h2 {
         font-size: 23px;
-        margin-top: 100px;
+        margin-block-start: 100px;
     }
     hr{
         margin-top: 50px;
