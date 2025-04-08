@@ -123,8 +123,8 @@ hr {
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-    margin-top: -75px;
-    margin-left: 15px;
+    margin-block-start: -75px;
+    margin-inline-start: 15px;
 }
 
 .slider-key img {
